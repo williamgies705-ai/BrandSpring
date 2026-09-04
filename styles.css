@@ -150,3 +150,14 @@ section[id]{scroll-margin-top:92px}
  .work,.how,.services,.process,.pricing{padding-top:92px}
  .steps .process-photo{min-height:280px}
 }
+
+
+/* BrandSpring logo */
+.logo-link{display:inline-flex;align-items:center;flex:0 0 auto}
+.brand-logo{display:block;width:auto;object-fit:contain}
+.header-logo{height:38px;max-width:190px}
+.footer-logo{height:46px;max-width:230px}
+@media(max-width:560px){
+  .header-logo{height:34px;max-width:168px}
+  .footer-logo{height:42px;max-width:210px}
+}
