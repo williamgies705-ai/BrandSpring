@@ -26,7 +26,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Roboto+Condensed:wght@700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=11" />
+  <link rel="stylesheet" href="styles.css?v=12" />
 </head>
 <body>
   <header class="site-header">
@@ -143,13 +143,21 @@
 
     <section id="contact" class="contact dark-section">
       <div class="contact-copy"><div class="eyebrow">LET'S TALK</div><h2>MAKE YOUR<br>BRAND <em>IMPOSSIBLE<br>TO IGNORE.</em></h2><a href="tel:17057957147">705-795-7147</a></div>
-      <form action="contact.php" method="post" class="contact-form">
-        <div class="two"><input name="name" placeholder="Your name" required><input name="business" placeholder="Business name"></div>
-        <div class="two"><input type="email" name="email" placeholder="Email" required><input name="phone" placeholder="Phone"></div>
-        <input name="website" placeholder="Website / Social media URL">
-        <select name="service"><option>What can we help with?</option><option>Social Media Management</option><option>Content Creation</option><option>Paid Social Advertising</option><option>Website Design</option><option>SEO</option><option>Branding</option><option>Full Digital Marketing</option><option>Not Sure Yet</option></select>
-        <textarea name="message" rows="5" placeholder="Tell us a little about your business"></textarea>
-        <input class="hp-field" type="text" name="company_website_confirm" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <form action="contact.php" method="post" class="contact-form" aria-describedby="contactHelp">
+        <p class="form-intro" id="contactHelp">Tell us what you need and we’ll point you in the right direction. <strong>We typically reply within one business day.</strong></p>
+        <div class="two">
+          <div class="field-group"><label for="contactName">Your name <span aria-hidden="true">*</span></label><input id="contactName" name="name" autocomplete="name" placeholder="e.g., Jane Smith" required></div>
+          <div class="field-group"><label for="contactBusiness">Business name</label><input id="contactBusiness" name="business" autocomplete="organization" placeholder="e.g., Smith Contracting"></div>
+        </div>
+        <div class="two">
+          <div class="field-group"><label for="contactEmail">Email <span aria-hidden="true">*</span></label><input id="contactEmail" type="email" name="email" autocomplete="email" inputmode="email" placeholder="you@business.ca" required></div>
+          <div class="field-group"><label for="contactPhone">Phone</label><input id="contactPhone" type="tel" name="phone" autocomplete="tel" inputmode="tel" placeholder="705-555-0123"></div>
+        </div>
+        <div class="field-group"><label for="contactWebsite">Website or social-media URL</label><input id="contactWebsite" type="url" name="website" autocomplete="url" inputmode="url" placeholder="https://"></div>
+        <div class="field-group"><label for="contactService">What can we help with? <span aria-hidden="true">*</span></label><select id="contactService" name="service" required><option value="" selected disabled>Choose a service</option><option>Social Media Management</option><option>Content Creation</option><option>Paid Social Advertising</option><option>Website Design</option><option>SEO</option><option>Branding</option><option>Full Digital Marketing</option><option>Not Sure Yet</option></select></div>
+        <div class="field-group"><label for="contactMessage">Tell us about your business <span aria-hidden="true">*</span></label><textarea id="contactMessage" name="message" rows="5" placeholder="What would you like to improve?" required maxlength="5000"></textarea></div>
+        <div class="hp-wrap" aria-hidden="true"><label for="companyWebsiteConfirm">Leave this field empty</label><input id="companyWebsiteConfirm" class="hp-field" type="text" name="company_website_confirm" tabindex="-1" autocomplete="off"></div>
+        <p class="required-note"><span aria-hidden="true">*</span> Required fields</p>
         <button class="pill lime" type="submit">LET'S GROW</button>
       </form>
     </section>
