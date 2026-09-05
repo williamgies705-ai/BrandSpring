@@ -213,3 +213,13 @@ section[id]{scroll-margin-top:92px}
 .legal-content ul{padding-left:22px}
 .legal-note{margin-top:50px;padding:20px;border:1px solid #353538;border-radius:14px;background:#18181a}
 @media(max-width:560px){.legal-header{padding:18px 20px}.legal-content{width:min(100% - 32px,860px)}}
+
+
+/* Results guarantee */
+.results-guarantee{max-width:1040px;margin:44px auto 14px;padding:28px 30px;border:1px solid rgba(191,255,0,.48);border-radius:22px;background:linear-gradient(135deg,rgba(191,255,0,.13),rgba(255,255,255,.04));display:grid;grid-template-columns:auto 1fr;gap:22px;align-items:start}
+.guarantee-mark{width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:var(--lime);color:#101011;font-size:32px;font-weight:900}
+.results-guarantee .eyebrow{margin-bottom:8px}
+.results-guarantee h3{margin:0 0 10px;font-family:"Roboto Condensed",sans-serif;font-size:clamp(1.65rem,3vw,2.5rem);line-height:.98}
+.results-guarantee p{margin:0 0 12px;max-width:780px;color:#ddd;line-height:1.65}
+.results-guarantee a{color:var(--lime);font-weight:800;text-decoration:underline;text-underline-offset:3px}
+@media (max-width:620px){.results-guarantee{grid-template-columns:1fr;padding:24px 20px}.guarantee-mark{width:48px;height:48px;font-size:26px}}
