@@ -161,3 +161,24 @@ section[id]{scroll-margin-top:92px}
   .header-logo{height:34px;max-width:168px}
   .footer-logo{height:42px;max-width:210px}
 }
+
+
+/* Accessible contact form */
+.form-intro{margin:0 0 8px;color:#cfcfd2;font-size:14px;line-height:1.6}
+.form-intro strong{color:var(--lime)}
+.field-group{display:grid;gap:7px;min-width:0}
+.field-group label{color:#f4f4f5;font-size:12px;font-weight:700;letter-spacing:.2px}
+.field-group label span,.required-note span{color:var(--lime)}
+.contact-form input,.contact-form select,.contact-form textarea{min-height:50px}
+.contact-form textarea{min-height:140px;resize:vertical}
+.contact-form input::placeholder,.contact-form textarea::placeholder{color:#8f8f94;opacity:1}
+.contact-form select:invalid{color:#9f9fa4}
+.required-note{margin:0;color:#aaa;font-size:11px}
+.hp-wrap{position:absolute!important;left:-10000px!important;top:auto!important;width:1px!important;height:1px!important;overflow:hidden!important}
+.contact-form button{min-height:48px}
+@media(max-width:560px){
+  .contact-form{gap:16px}
+  .field-group{gap:8px}
+  .contact-form input,.contact-form select,.contact-form textarea{font-size:16px}
+  .contact-form button{width:100%}
+}
