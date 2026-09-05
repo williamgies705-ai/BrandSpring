@@ -20,6 +20,6 @@ $subject = "Brand Spring website inquiry from $name";
 $body = "Name: $name\nBusiness: $business\nEmail: $email\nPhone: $phone\nWebsite/Social: $website\nService: $service\n\nMessage:\n$message\n";
 $headers = "From: Brand Spring Website <no-reply@brandspring.ca>\r\nReply-To: $email\r\n";
 $sent = mail($to, $subject, $body, $headers);
-if ($sent) { echo '<!doctype html><meta name="viewport" content="width=device-width"><style>body{font-family:Arial;background:#101011;color:white;display:grid;place-items:center;height:100vh;margin:0}.box{text-align:center}a{color:#c8ff22}</style><div class="box"><h1>Thanks — we got it.</h1><p>Brand Spring will be in touch.</p><a href="index.html">Back to site</a></div>'; }
+if ($sent) { header('Location: thank-you.html', true, 303); exit; }
 else { http_response_code(500); echo 'Message could not be sent. Please call 705-795-7147.'; }
 ?>
