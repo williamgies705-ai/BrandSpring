@@ -182,3 +182,13 @@ section[id]{scroll-margin-top:92px}
   .contact-form input,.contact-form select,.contact-form textarea{font-size:16px}
   .contact-form button{width:100%}
 }
+
+/* Branded form confirmation page */
+.thank-you-page{min-height:100vh;background:var(--ink);color:white;display:grid;place-items:center;padding:32px}
+.thank-you-card{width:min(680px,100%);text-align:center;padding:clamp(38px,7vw,72px);border:1px solid #353538;border-radius:24px;background:#18181a;box-shadow:0 24px 80px #0006}
+.thank-you-card .brand-logo{height:auto;width:min(310px,80%);margin:0 auto 46px}
+.thank-you-kicker{color:var(--lime);font-size:11px;font-weight:800;letter-spacing:2px}
+.thank-you-card h1{font-family:"Roboto Condensed",Inter,sans-serif;font-size:clamp(52px,9vw,88px);line-height:.88;letter-spacing:-3px;margin:18px 0;text-transform:uppercase}
+.thank-you-card p{max-width:500px;margin:0 auto 30px;color:#cfcfd2;font-size:16px;line-height:1.7}
+.thank-you-actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+@media(max-width:560px){.thank-you-page{padding:18px}.thank-you-card{padding:38px 22px}.thank-you-actions{flex-direction:column}.thank-you-actions .pill{width:100%}}
