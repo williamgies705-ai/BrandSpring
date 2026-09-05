@@ -192,3 +192,23 @@ section[id]{scroll-margin-top:92px}
 .thank-you-card p{max-width:500px;margin:0 auto 30px;color:#cfcfd2;font-size:16px;line-height:1.7}
 .thank-you-actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
 @media(max-width:560px){.thank-you-page{padding:18px}.thank-you-card{padding:38px 22px}.thank-you-actions{flex-direction:column}.thank-you-actions .pill{width:100%}}
+
+
+/* Owner details and transparent testimonial examples */
+.business-details{display:grid;gap:12px;margin-top:28px}
+.business-details p{margin:0;padding:16px 18px;border:1px solid #ddd7ce;border-radius:12px;background:#fff}
+.business-details b,.business-details span,.business-details a{display:block}
+.business-details b{color:#111;font-size:13px}
+.business-details span,.business-details a{margin-top:5px;color:#666;font-size:12px;line-height:1.5}
+.business-details a{color:#4f369f;font-weight:700;overflow-wrap:anywhere}
+.testimonials{padding:110px 6vw}
+.testimonials h2{font-family:"Roboto Condensed",Inter,sans-serif;font-size:clamp(52px,6vw,92px);font-weight:900;letter-spacing:-4px;line-height:.82;margin:0;text-transform:uppercase}
+.testimonial-disclosure{max-width:760px;margin:26px 0 36px;color:#68686c;font-size:13px;line-height:1.7}
+.testimonial-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.testimonial-grid blockquote{margin:0;padding:28px;border:1px solid #ddd7ce;border-radius:16px;background:#fff}
+.testimonial-grid span{display:block;color:#667000;font-size:9px;font-weight:900;letter-spacing:1.2px}
+.testimonial-grid p{margin:22px 0;font-size:16px;line-height:1.7;color:#29292b}
+.testimonial-grid cite{font-size:11px;font-style:normal;color:#777}
+.service-area{margin-top:16px;color:#aaa;font-size:12px}
+@media(max-width:900px){.testimonial-grid{grid-template-columns:1fr}.testimonials{padding:90px 6vw}}
+@media(max-width:560px){.testimonials{padding:80px 20px}.testimonials h2{font-size:54px}.testimonial-grid blockquote{padding:22px}}
